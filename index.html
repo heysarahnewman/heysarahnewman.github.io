@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Newman</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -13,7 +14,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --cream: #FAF6F0;
             --warm-white: #FFF9F3;
@@ -27,9 +27,7 @@
             --serif: 'DM Serif Display', Georgia, serif;
             --sans: 'DM Sans', 'Helvetica Neue', sans-serif;
         }
-
         html { scroll-behavior: smooth; }
-
         body {
             font-family: var(--sans);
             background-color: var(--cream);
@@ -37,23 +35,19 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
-
         /* ═══════════════════════════════════
            QUILT BLOCK SVG PATTERNS
            ═══════════════════════════════════ */
-
         /* Checkerboard pattern - coral */
         .checker-coral {
             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='12' height='12' fill='%23E25B4E' opacity='0.9'/%3E%3Crect x='12' y='12' width='12' height='12' fill='%23E25B4E' opacity='0.9'/%3E%3Crect x='12' y='0' width='12' height='12' fill='%23FAF6F0'/%3E%3Crect x='0' y='12' width='12' height='12' fill='%23FAF6F0'/%3E%3C/svg%3E");
             background-size: 16px 16px;
         }
-
         /* Checkerboard pattern - periwinkle */
         .checker-peri {
             background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='12' height='12' fill='%237B8CCA' opacity='0.9'/%3E%3Crect x='12' y='12' width='12' height='12' fill='%237B8CCA' opacity='0.9'/%3E%3Crect x='12' y='0' width='12' height='12' fill='%23FAF6F0'/%3E%3Crect x='0' y='12' width='12' height='12' fill='%23FAF6F0'/%3E%3C/svg%3E");
             background-size: 16px 16px;
         }
-
         /* Cross / plus quilt block */
         .quilt-cross {
             display: inline-block;
@@ -62,7 +56,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='0' width='12' height='28' fill='%237B8CCA' opacity='0.35'/%3E%3Crect x='0' y='8' width='28' height='12' fill='%237B8CCA' opacity='0.35'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         .quilt-cross-coral {
             display: inline-block;
             width: 28px;
@@ -70,7 +63,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='0' width='12' height='28' fill='%23E25B4E' opacity='0.3'/%3E%3Crect x='0' y='8' width='28' height='12' fill='%23E25B4E' opacity='0.3'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         /* Diamond-in-square quilt block */
         .quilt-diamond {
             display: inline-block;
@@ -79,7 +71,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='36' height='36' fill='none'/%3E%3Cpolygon points='18,2 34,18 18,34 2,18' fill='%23E25B4E' opacity='0.18'/%3E%3Cpolygon points='18,8 28,18 18,28 8,18' fill='%237B8CCA' opacity='0.22'/%3E%3Crect x='14' y='14' width='8' height='8' fill='%23E25B4E' opacity='0.2'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         /* Nine-patch quilt block */
         .quilt-nine-patch {
             display: inline-block;
@@ -88,7 +79,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='10' height='10' fill='%237B8CCA' opacity='0.3'/%3E%3Crect x='10' y='0' width='10' height='10' fill='%23E25B4E' opacity='0.2'/%3E%3Crect x='20' y='0' width='10' height='10' fill='%237B8CCA' opacity='0.3'/%3E%3Crect x='0' y='10' width='10' height='10' fill='%23E25B4E' opacity='0.2'/%3E%3Crect x='10' y='10' width='10' height='10' fill='%237B8CCA' opacity='0.3'/%3E%3Crect x='20' y='10' width='10' height='10' fill='%23E25B4E' opacity='0.2'/%3E%3Crect x='0' y='20' width='10' height='10' fill='%237B8CCA' opacity='0.3'/%3E%3Crect x='10' y='20' width='10' height='10' fill='%23E25B4E' opacity='0.2'/%3E%3Crect x='20' y='20' width='10' height='10' fill='%237B8CCA' opacity='0.3'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         /* Pinwheel quilt block */
         .quilt-pinwheel {
             display: inline-block;
@@ -97,8 +87,51 @@
             background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,0 16,0 16,16' fill='%23E25B4E' opacity='0.25'/%3E%3Cpolygon points='16,0 32,0 16,16' fill='%237B8CCA' opacity='0.25'/%3E%3Cpolygon points='32,0 32,16 16,16' fill='%23E25B4E' opacity='0.2'/%3E%3Cpolygon points='32,16 32,32 16,16' fill='%237B8CCA' opacity='0.2'/%3E%3Cpolygon points='32,32 16,32 16,16' fill='%23E25B4E' opacity='0.25'/%3E%3Cpolygon points='16,32 0,32 16,16' fill='%237B8CCA' opacity='0.25'/%3E%3Cpolygon points='0,32 0,16 16,16' fill='%23E25B4E' opacity='0.2'/%3E%3Cpolygon points='0,16 0,0 16,16' fill='%237B8CCA' opacity='0.2'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
-
+        /* Tulip quilt block - coral */
+        .quilt-tulip-coral {
+            display: inline-block;
+            width: 24px;
+            height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='28' viewBox='0 0 24 28' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- petals --%3E%3Cpolygon points='12,0 20,10 12,8' fill='%23E25B4E' opacity='0.8'/%3E%3Cpolygon points='12,0 4,10 12,8' fill='%23E25B4E' opacity='0.6'/%3E%3C!-- center --%3E%3Cellipse cx='12' cy='10' rx='4' ry='3' fill='%23E25B4E' opacity='0.7'/%3E%3C!-- stem --%3E%3Crect x='11' y='12' width='2' height='12' fill='%237B8CCA' opacity='0.5'/%3E%3C!-- leaves --%3E%3Cpolygon points='11,18 5,22 11,22' fill='%237B8CCA' opacity='0.35'/%3E%3Cpolygon points='13,18 19,22 13,22' fill='%237B8CCA' opacity='0.35'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        /* Tulip quilt block - periwinkle */
+        .quilt-tulip-peri {
+            display: inline-block;
+            width: 24px;
+            height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='28' viewBox='0 0 24 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='12,0 20,10 12,8' fill='%237B8CCA' opacity='0.8'/%3E%3Cpolygon points='12,0 4,10 12,8' fill='%237B8CCA' opacity='0.6'/%3E%3Cellipse cx='12' cy='10' rx='4' ry='3' fill='%237B8CCA' opacity='0.7'/%3E%3Crect x='11' y='12' width='2' height='12' fill='%23E25B4E' opacity='0.4'/%3E%3Cpolygon points='11,18 5,22 11,22' fill='%23E25B4E' opacity='0.3'/%3E%3Cpolygon points='13,18 19,22 13,22' fill='%23E25B4E' opacity='0.3'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        /* Flying geese border strip - coral (triangles pointing up) */
+        .geese-strip-coral {
+            width: 100%;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='16' fill='%23FAF6F0'/%3E%3Cpolygon points='0,16 12,0 24,16' fill='%23E25B4E' opacity='0.5'/%3E%3C/svg%3E");
+            background-size: 24px 16px;
+        }
+        /* Flying geese border strip - periwinkle */
+        .geese-strip-peri {
+            width: 100%;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='16' fill='%23FAF6F0'/%3E%3Cpolygon points='0,16 12,0 24,16' fill='%237B8CCA' opacity='0.45'/%3E%3C/svg%3E");
+            background-size: 24px 16px;
+        }
+        /* Ohio star border strip (repeating mini stars) */
+        .star-strip {
+            width: 100%;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' fill='%23FAF6F0'/%3E%3Crect x='0' y='0' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='14' y='0' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='0' y='14' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='14' y='14' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='7' y='7' width='6' height='6' fill='%23E25B4E' opacity='0.6'/%3E%3Cpolygon points='7,0 10,4 7,7' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='13,0 10,4 13,7' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='20,7 16,10 13,7' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='20,13 16,10 13,13' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='7,20 10,16 7,13' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='13,20 10,16 13,13' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='0,7 4,10 7,7' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='0,13 4,10 7,13' fill='%237B8CCA' opacity='0.5'/%3E%3C/svg%3E");
+            background-size: 20px 20px;
+        }
+        /* Mini Ohio star for inline use */
+        .mini-star {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' fill='%23FAF6F0'/%3E%3Crect x='0' y='0' width='5' height='5' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='11' y='0' width='5' height='5' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='0' y='11' width='5' height='5' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='11' y='11' width='5' height='5' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='5' y='5' width='6' height='6' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='5,0 8,3 5,5' fill='%23E25B4E' opacity='0.5'/%3E%3Cpolygon points='11,0 8,3 11,5' fill='%23E25B4E' opacity='0.5'/%3E%3Cpolygon points='16,5 13,8 11,5' fill='%237B8CCA' opacity='0.55'/%3E%3Cpolygon points='16,11 13,8 11,11' fill='%237B8CCA' opacity='0.55'/%3E%3Cpolygon points='5,16 8,13 5,11' fill='%23E25B4E' opacity='0.5'/%3E%3Cpolygon points='11,16 8,13 11,11' fill='%23E25B4E' opacity='0.5'/%3E%3Cpolygon points='0,5 3,8 5,5' fill='%237B8CCA' opacity='0.55'/%3E%3Cpolygon points='0,11 3,8 5,11' fill='%237B8CCA' opacity='0.55'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
         /* ─── NAV ─── */
         nav {
             position: fixed;
@@ -108,7 +141,6 @@
             z-index: 100;
             border-bottom: 1px solid var(--rule);
         }
-
         nav .nav-inner {
             max-width: 900px;
             margin: 0 auto;
@@ -117,7 +149,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
         nav .logo {
             font-family: var(--serif);
             font-size: 1.15rem;
@@ -127,22 +158,19 @@
             align-items: center;
             gap: 0.6rem;
         }
-
         /* Ohio Star quilt block: 3x3 grid with star-point quarter-square triangles */
         nav .logo-star {
             display: inline-block;
             width: 24px;
             height: 24px;
-            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- background --%3E%3Crect width='24' height='24' fill='%23FAF6F0'/%3E%3C!-- 4 corner squares (cream/background) --%3E%3Crect x='0' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='0' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3C!-- center square --%3E%3Crect x='8' y='8' width='8' height='8' fill='%23E25B4E' opacity='0.85'/%3E%3C!-- top star points --%3E%3Cpolygon points='8,0 12,4 8,8' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,0 12,4 16,8' fill='%23E25B4E' opacity='0.7'/%3E%3C!-- right star points --%3E%3Cpolygon points='24,8 20,12 16,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='24,16 20,12 16,16' fill='%237B8CCA' opacity='0.7'/%3E%3C!-- bottom star points --%3E%3Cpolygon points='8,24 12,20 8,16' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,24 12,20 16,16' fill='%23E25B4E' opacity='0.7'/%3E%3C!-- left star points --%3E%3Cpolygon points='0,8 4,12 8,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='0,16 4,12 8,16' fill='%237B8CCA' opacity='0.7'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' fill='%23FAF6F0'/%3E%3Crect x='0' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='0' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23E25B4E' opacity='0.85'/%3E%3Cpolygon points='8,0 12,4 8,8' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,0 12,4 16,8' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='24,8 20,12 16,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='24,16 20,12 16,16' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='8,24 12,20 8,16' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,24 12,20 16,16' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='0,8 4,12 8,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='0,16 4,12 8,16' fill='%237B8CCA' opacity='0.7'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         nav .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-
         nav .nav-links a {
             font-size: 0.85rem;
             font-weight: 500;
@@ -151,11 +179,9 @@
             letter-spacing: 0.03em;
             transition: color 0.3s ease;
         }
-
         nav .nav-links a:hover {
             color: var(--coral);
         }
-
         /* ─── HERO ─── */
         .hero {
             min-height: 100vh;
@@ -166,7 +192,6 @@
             position: relative;
             overflow: hidden;
         }
-
         /* Checker border strip at top - periwinkle */
         .hero::before {
             content: '';
@@ -178,7 +203,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='7' height='7' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='7' y='7' width='7' height='7' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='7' y='0' width='7' height='7' fill='%23FAF6F0'/%3E%3Crect x='0' y='7' width='7' height='7' fill='%23FAF6F0'/%3E%3C/svg%3E");
             background-size: 14px 14px;
         }
-
         /* Sawtooth border at bottom of hero */
         .hero::after {
             content: '';
@@ -190,14 +214,11 @@
             background-image: url("data:image/svg+xml,%3Csvg width='32' height='16' viewBox='0 0 32 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,16 16,0 32,16' fill='%23E25B4E' opacity='0.15'/%3E%3C/svg%3E");
             background-size: 32px 16px;
         }
-
         .hero-content {
             max-width: 620px;
             text-align: center;
             position: relative;
         }
-
-
         .hero-label {
             font-size: 0.78rem;
             font-weight: 500;
@@ -210,7 +231,6 @@
             justify-content: center;
             gap: 0.75rem;
         }
-
         .hero-label .dot {
             width: 5px;
             height: 5px;
@@ -218,7 +238,6 @@
             border-radius: 50%;
             display: inline-block;
         }
-
         .hero h1 {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: clamp(3.2rem, 7vw, 5.5rem);
@@ -227,12 +246,10 @@
             color: var(--ink);
             margin-bottom: 1.5rem;
         }
-
         .hero h1 em {
             font-style: italic;
             color: var(--coral);
         }
-
         .hero-divider {
             width: 120px;
             height: 10px;
@@ -240,7 +257,6 @@
             background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='5' height='5' fill='%237B8CCA' opacity='0.5'/%3E%3Crect x='5' y='5' width='5' height='5' fill='%237B8CCA' opacity='0.5'/%3E%3Crect x='5' y='0' width='5' height='5' fill='%23E25B4E' opacity='0.35'/%3E%3Crect x='0' y='5' width='5' height='5' fill='%23E25B4E' opacity='0.35'/%3E%3C/svg%3E");
             background-size: 10px 10px;
         }
-
         .hero-bio {
             font-size: 1rem;
             color: var(--muted);
@@ -248,56 +264,47 @@
             margin: 0 auto;
             line-height: 1.85;
         }
-
         /* ─── SECTIONS ─── */
         .content-wrap {
             max-width: 900px;
             margin: 0 auto;
             padding: 5rem 2rem;
         }
-
         .section-header {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin-bottom: 3rem;
         }
-
         .section-header .quilt-icon {
             width: 24px;
             height: 24px;
             flex-shrink: 0;
         }
-
         .section-title {
             font-family: var(--serif);
             font-size: 2rem;
             font-weight: 400;
         }
-
         .section-rule {
             flex: 1;
             height: 1px;
             background: var(--rule);
             margin-left: 1rem;
         }
-
         /* ─── CHECKER BORDER STRIPS ─── */
         .checker-strip {
             width: 100%;
             height: 12px;
         }
-
         .checker-strip-peri {
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='6' height='6' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='6' y='6' width='6' height='6' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='6' y='0' width='6' height='6' fill='%23FAF6F0'/%3E%3Crect x='0' y='6' width='6' height='6' fill='%23FAF6F0'/%3E%3C/svg%3E");
             background-size: 12px 12px;
         }
-
         .checker-strip-coral {
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='6' height='6' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='6' y='6' width='6' height='6' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='6' y='0' width='6' height='6' fill='%23FAF6F0'/%3E%3Crect x='0' y='6' width='6' height='6' fill='%23FAF6F0'/%3E%3C/svg%3E");
             background-size: 12px 12px;
         }
-
         /* ─── ABOUT ─── */
         .about-section {
             background: var(--warm-white);
@@ -306,54 +313,36 @@
             position: relative;
             overflow: hidden;
         }
-
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3.5rem;
             align-items: start;
         }
-
         .about-text p {
             font-size: 0.95rem;
             line-height: 1.9;
             color: var(--muted);
             margin-bottom: 1.25rem;
         }
-
         .about-details {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
         }
-
         .detail-card {
             padding: 1.25rem 1.5rem;
-            border: 1px solid var(--rule);
-            border-radius: 2px;
+            border: 14px solid transparent;
+            border-radius: 0;
             position: relative;
             background: var(--cream);
         }
-
-        .detail-card::before {
-            content: '';
-            position: absolute;
-            top: -1px;
-            left: -1px;
-            width: 8px;
-            height: calc(100% + 2px);
+        .detail-card.coral-accent {
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
         }
-
-        .detail-card.coral-accent::before {
-            background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='4' height='4' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='4' y='4' width='4' height='4' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='4' y='0' width='4' height='4' fill='%23FAF6F0'/%3E%3Crect x='0' y='4' width='4' height='4' fill='%23FAF6F0'/%3E%3C/svg%3E");
-            background-size: 8px 8px;
+        .detail-card.peri-accent {
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
         }
-
-        .detail-card.peri-accent::before {
-            background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='4' height='4' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='4' y='4' width='4' height='4' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='4' y='0' width='4' height='4' fill='%23FAF6F0'/%3E%3Crect x='0' y='4' width='4' height='4' fill='%23FAF6F0'/%3E%3C/svg%3E");
-            background-size: 8px 8px;
-        }
-
         .detail-card .card-label {
             font-size: 0.68rem;
             font-weight: 600;
@@ -362,91 +351,55 @@
             color: var(--muted);
             margin-bottom: 0.3rem;
         }
-
         .detail-card .card-value {
             font-family: var(--serif);
             font-size: 1.15rem;
         }
-
         .detail-card .card-detail {
             font-size: 0.8rem;
             color: var(--muted);
             margin-top: 0.15rem;
         }
-
         /* ─── WORKS ─── */
         .works-section {
             position: relative;
             overflow: hidden;
         }
-
-        /* Scattered quilt blocks on works section */
-        .works-section::before {
-            content: '';
-            position: absolute;
-            top: 2rem;
-            right: 1rem;
-            width: 36px;
-            height: 36px;
-            background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='18,2 34,18 18,34 2,18' fill='%237B8CCA' opacity='0.12'/%3E%3Cpolygon points='18,8 28,18 18,28 8,18' fill='%23E25B4E' opacity='0.12'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            pointer-events: none;
-        }
-
-        .works-section::after {
-            content: '';
-            position: absolute;
-            bottom: 3rem;
-            left: 1.5rem;
-            width: 24px;
-            height: 24px;
-            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='7' y='0' width='10' height='24' fill='%237B8CCA' opacity='0.2'/%3E%3Crect x='0' y='7' width='24' height='10' fill='%237B8CCA' opacity='0.2'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            pointer-events: none;
-        }
-
         .works-list {
             list-style: none;
         }
-
         .works-list li {
-            border-bottom: 1px solid var(--rule);
-            padding: 1.75rem 0;
+            border: 10px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='10' height='10' fill='%237B8CCA' opacity='0.7'/%3E%3Crect x='10' y='10' width='10' height='10' fill='%237B8CCA' opacity='0.7'/%3E%3Crect x='10' y='0' width='10' height='10' fill='%23FAF6F0'/%3E%3Crect x='0' y='10' width='10' height='10' fill='%23FAF6F0'/%3E%3C/svg%3E") 10 round;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
             display: grid;
             grid-template-columns: 70px 1fr auto;
             gap: 1.5rem;
             align-items: baseline;
             transition: all 0.25s ease;
+            background: var(--warm-white);
         }
-
-        .works-list li:first-child {
-            border-top: 1px solid var(--rule);
-        }
-
         .works-list li:hover {
-            padding-left: 1rem;
+            padding-left: 2rem;
         }
-
         .work-year {
             font-family: var(--serif);
             font-size: 0.95rem;
             font-style: italic;
             color: var(--periwinkle);
         }
-
         .work-title {
             font-family: var(--serif);
             font-size: 1.2rem;
             font-weight: 400;
             color: var(--ink);
         }
-
         .work-desc {
             font-size: 0.8rem;
             color: var(--muted);
             margin-top: 0.25rem;
         }
-
         .work-type {
             font-size: 0.68rem;
             font-weight: 600;
@@ -455,7 +408,6 @@
             color: var(--coral);
             white-space: nowrap;
         }
-
         /* ─── NOW ─── */
         .now-section {
             background: var(--warm-white);
@@ -464,20 +416,6 @@
             position: relative;
             overflow: hidden;
         }
-
-        /* Sawtooth at top of Now section */
-        .now-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 12px;
-            background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,0 12,12 24,0' fill='%237B8CCA' opacity='0.1'/%3E%3C/svg%3E");
-            background-size: 24px 12px;
-            pointer-events: none;
-        }
-
         .now-updated {
             font-size: 0.72rem;
             font-weight: 500;
@@ -486,26 +424,26 @@
             color: var(--periwinkle);
             margin-bottom: 2.5rem;
         }
-
         .now-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
         }
-
         .now-card {
             padding: 1.5rem;
-            border: 1px solid var(--rule);
+            border: 14px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
             background: var(--cream);
             transition: all 0.25s ease;
             position: relative;
         }
-
+        .now-card:nth-child(even) {
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
+        }
         .now-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 16px rgba(0,0,0,0.04);
         }
-
         .now-card .now-label {
             font-family: var(--serif);
             font-size: 1.05rem;
@@ -515,34 +453,37 @@
             align-items: center;
             gap: 0.5rem;
         }
-
         .now-card .now-label .mini-cross {
             display: inline-block;
             width: 12px;
             height: 12px;
         }
-
         .now-card .mini-cross-coral {
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='0' width='4' height='12' fill='%23E25B4E' opacity='0.5'/%3E%3Crect x='0' y='4' width='12' height='4' fill='%23E25B4E' opacity='0.5'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         .now-card .mini-cross-peri {
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='0' width='4' height='12' fill='%237B8CCA' opacity='0.5'/%3E%3Crect x='0' y='4' width='12' height='4' fill='%237B8CCA' opacity='0.5'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
-
         .now-card p {
             font-size: 0.9rem;
             line-height: 1.8;
             color: var(--muted);
         }
-
+        .now-card a {
+            color: var(--coral);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .now-card a:hover {
+            color: var(--periwinkle);
+        }
         /* ─── FOOTER ─── */
         footer {
             padding: 0;
         }
-
         .footer-inner {
             max-width: 900px;
             margin: 0 auto;
@@ -551,20 +492,17 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .footer-name {
             font-family: var(--serif);
             font-size: 0.9rem;
             font-style: italic;
             color: var(--muted);
         }
-
         .footer-links {
             display: flex;
             gap: 1.75rem;
             list-style: none;
         }
-
         .footer-links a {
             font-size: 0.8rem;
             font-weight: 500;
@@ -572,62 +510,49 @@
             color: var(--muted);
             transition: color 0.3s ease;
         }
-
         .footer-links a:hover {
             color: var(--coral);
         }
-
         /* ─── RESPONSIVE ─── */
         @media (max-width: 768px) {
             nav .nav-inner {
                 padding: 0.8rem 1.5rem;
             }
-
             nav .nav-links {
                 gap: 1.25rem;
             }
-
             .hero {
                 padding: 6rem 1.5rem 4rem;
             }
-
             .content-wrap {
                 padding: 3.5rem 1.5rem;
             }
-
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-
             .works-list li {
                 grid-template-columns: 1fr;
                 gap: 0.2rem;
             }
-
             .work-year {
                 font-size: 0.8rem;
             }
-
             .work-type {
                 margin-top: 0.4rem;
             }
-
             .now-grid {
                 grid-template-columns: 1fr;
             }
-
             .footer-inner {
                 flex-direction: column;
                 gap: 1.25rem;
                 text-align: center;
             }
-
         }
     </style>
 </head>
 <body>
-
     <!-- NAV -->
     <nav>
         <div class="nav-inner">
@@ -642,7 +567,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
@@ -654,15 +578,13 @@
             </p>
         </div>
     </section>
-
-    <!-- Checker strip -->
-    <div class="checker-strip checker-strip-peri"></div>
-
+    <!-- Flying geese border -->
+    <div class="geese-strip-peri"></div>
     <!-- ABOUT -->
     <section class="about-section">
         <div class="content-wrap">
             <div class="section-header">
-                <div class="quilt-icon quilt-cross"></div>
+                <div class="quilt-icon quilt-tulip-coral"></div>
                 <h2 class="section-title">About</h2>
                 <div class="section-rule"></div>
             </div>
@@ -695,15 +617,13 @@
             </div>
         </div>
     </section>
-
-    <!-- Checker strip -->
-    <div class="checker-strip checker-strip-coral"></div>
-
+    <!-- Star block border -->
+    <div class="star-strip"></div>
     <!-- SELECTED WORKS -->
     <section class="works-section">
         <div class="content-wrap">
             <div class="section-header">
-                <div class="quilt-icon quilt-cross-coral"></div>
+                <div class="quilt-icon quilt-tulip-peri"></div>
                 <h2 class="section-title">Selected Works</h2>
                 <div class="section-rule"></div>
             </div>
@@ -735,15 +655,13 @@
             </ul>
         </div>
     </section>
-
-    <!-- Checker strip -->
-    <div class="checker-strip checker-strip-coral"></div>
-
+    <!-- Flying geese border -->
+    <div class="geese-strip-coral"></div>
     <!-- NOW -->
     <section class="now-section">
         <div class="content-wrap">
             <div class="section-header">
-                <div class="quilt-icon quilt-cross"></div>
+                <div class="quilt-icon quilt-tulip-coral"></div>
                 <h2 class="section-title">Now</h2>
                 <div class="section-rule"></div>
             </div>
@@ -751,39 +669,37 @@
             <div class="now-grid">
                 <div class="now-card">
                     <p class="now-label">
-                        <span class="mini-cross mini-cross-coral"></span>
+                        <span class="mini-star"></span>
                         Reading
                     </p>
                     <p>The Covenant of Water, by Abraham Verghese. Loved Cutting for Stone and especially My Own Country - looking forward to this!</p>
                 </div>
                 <div class="now-card">
                     <p class="now-label">
-                        <span class="mini-cross mini-cross-peri"></span>
+                        <span class="mini-star"></span>
                         Studying
                     </p>
                     <p>Preparing for comprehensive exams this summer. Send snacks and encouragement.</p>
                 </div>
                 <div class="now-card">
                     <p class="now-label">
-                        <span class="mini-cross mini-cross-coral"></span>
+                        <span class="mini-star"></span>
                         Thinking About
                     </p>
                     <p>How AI can support qualitative research methods. Also, what to have for dinner.</p>
                 </div>
                 <div class="now-card">
                     <p class="now-label">
-                        <span class="mini-cross mini-cross-peri"></span>
+                        <span class="mini-star"></span>
                         Making
                     </p>
-                    <p>This website. Also, building Invisible String (invisiblestringapp.com) with my boyfriend, an app that uses your photo metadata to find times you and your partner where nearby before you met. Try it out and tell me what you think!</p>
+                    <p>This website. Also, building <a href="https://invisiblestringapp.com" target="_blank">Invisible String</a>, an app that uses your photo metadata to find times you and your partner were nearby before you met. Try it out and tell me what you think!</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Checker strip -->
+    <!-- Checker strip + star border -->
     <div class="checker-strip checker-strip-peri"></div>
-
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
@@ -795,6 +711,5 @@
             </ul>
         </div>
     </footer>
-
 </body>
 </html>
