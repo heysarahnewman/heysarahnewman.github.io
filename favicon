@@ -1,0 +1,37 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" fill="#FAF6F0"/>
+
+  <!-- 3x3 Ohio Star grid (each cell ~10px, with 1px margin) -->
+
+  <!-- Corner squares - periwinkle -->
+  <rect x="1" y="1" width="9" height="9" fill="#7B8CCA" opacity="0.5"/>
+  <rect x="22" y="1" width="9" height="9" fill="#7B8CCA" opacity="0.5"/>
+  <rect x="1" y="22" width="9" height="9" fill="#7B8CCA" opacity="0.5"/>
+  <rect x="22" y="22" width="9" height="9" fill="#7B8CCA" opacity="0.5"/>
+
+  <!-- Center square - coral -->
+  <rect x="11" y="11" width="10" height="10" fill="#E25B4E"/>
+
+  <!-- Star point triangles - top -->
+  <polygon points="11,1 16,6 11,10" fill="#E25B4E" opacity="0.85"/>
+  <polygon points="21,1 16,6 21,10" fill="#E25B4E" opacity="0.85"/>
+
+  <!-- Star point triangles - right -->
+  <polygon points="31,11 26,16 22,11" fill="#7B8CCA" opacity="0.8"/>
+  <polygon points="31,21 26,16 22,21" fill="#7B8CCA" opacity="0.8"/>
+
+  <!-- Star point triangles - bottom -->
+  <polygon points="11,31 16,26 11,22" fill="#E25B4E" opacity="0.85"/>
+  <polygon points="21,31 16,26 21,22" fill="#E25B4E" opacity="0.85"/>
+
+  <!-- Star point triangles - left -->
+  <polygon points="1,11 6,16 10,11" fill="#7B8CCA" opacity="0.8"/>
+  <polygon points="1,21 6,16 10,21" fill="#7B8CCA" opacity="0.8"/>
+
+  <!-- Side backgrounds (behind star points) -->
+  <rect x="11" y="1" width="10" height="9" fill="#FAF6F0" opacity="0.3"/>
+  <rect x="22" y="11" width="9" height="10" fill="#FAF6F0" opacity="0.3"/>
+  <rect x="11" y="22" width="10" height="9" fill="#FAF6F0" opacity="0.3"/>
+  <rect x="1" y="11" width="9" height="10" fill="#FAF6F0" opacity="0.3"/>
+</svg>
