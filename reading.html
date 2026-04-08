@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Log — Sarah Newman</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --cream: #FAF6F0;
+            --warm-white: #FFF9F3;
+            --ink: #2c2a28;
+            --muted: #7a756e;
+            --coral: #E25B4E;
+            --coral-light: rgba(226, 91, 78, 0.12);
+            --periwinkle: #7B8CCA;
+            --periwinkle-light: rgba(123, 140, 202, 0.12);
+            --rule: #e0dbd4;
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'DM Sans', 'Helvetica Neue', sans-serif;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--sans);
+            background-color: var(--cream);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* ─── NAV ─── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--cream);
+            z-index: 100;
+            border-bottom: 1px solid var(--rule);
+        }
+        nav .nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-family: var(--serif);
+            font-size: 1.15rem;
+            text-decoration: none;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        nav .logo-star {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' fill='%23FAF6F0'/%3E%3Crect x='0' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='0' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='0' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='16' y='16' width='8' height='8' fill='%23e0dbd4' opacity='0.6'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23E25B4E' opacity='0.85'/%3E%3Cpolygon points='8,0 12,4 8,8' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,0 12,4 16,8' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='24,8 20,12 16,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='24,16 20,12 16,16' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='8,24 12,20 8,16' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='16,24 12,20 16,16' fill='%23E25B4E' opacity='0.7'/%3E%3Cpolygon points='0,8 4,12 8,8' fill='%237B8CCA' opacity='0.7'/%3E%3Cpolygon points='0,16 4,12 8,16' fill='%237B8CCA' opacity='0.7'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--muted);
+            letter-spacing: 0.03em;
+            transition: color 0.3s ease;
+        }
+        nav .nav-links a:hover {
+            color: var(--coral);
+        }
+        nav .nav-links a.active {
+            color: var(--coral);
+        }
+        /* ─── PAGE HEADER ─── */
+        .page-header {
+            padding: 8rem 2rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 56px;
+            left: 0;
+            width: 100%;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='7' height='7' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='7' y='7' width='7' height='7' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='7' y='0' width='7' height='7' fill='%23FAF6F0'/%3E%3Crect x='0' y='7' width='7' height='7' fill='%23FAF6F0'/%3E%3C/svg%3E");
+            background-size: 14px 14px;
+        }
+        .page-header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 1rem;
+        }
+        .page-header h1 em {
+            font-style: italic;
+            color: var(--coral);
+        }
+        .page-header p {
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.85;
+        }
+        .page-divider {
+            width: 120px;
+            height: 10px;
+            margin: 1.5rem auto;
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='5' height='5' fill='%237B8CCA' opacity='0.5'/%3E%3Crect x='5' y='5' width='5' height='5' fill='%237B8CCA' opacity='0.5'/%3E%3Crect x='5' y='0' width='5' height='5' fill='%23E25B4E' opacity='0.35'/%3E%3Crect x='0' y='5' width='5' height='5' fill='%23E25B4E' opacity='0.35'/%3E%3C/svg%3E");
+            background-size: 10px 10px;
+        }
+        /* ─── FLYING GEESE STRIP ─── */
+        .geese-strip-peri {
+            width: 100%;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='16' fill='%23FAF6F0'/%3E%3Cpolygon points='0,16 12,0 24,16' fill='%237B8CCA' opacity='0.45'/%3E%3C/svg%3E");
+            background-size: 24px 16px;
+        }
+        .geese-strip-coral {
+            width: 100%;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='16' fill='%23FAF6F0'/%3E%3Cpolygon points='0,16 12,0 24,16' fill='%23E25B4E' opacity='0.5'/%3E%3C/svg%3E");
+            background-size: 24px 16px;
+        }
+        /* ─── STAR STRIP ─── */
+        .star-strip {
+            width: 100%;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' fill='%23FAF6F0'/%3E%3Crect x='0' y='0' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='14' y='0' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='0' y='14' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='14' y='14' width='6' height='6' fill='%23e0dbd4' opacity='0.5'/%3E%3Crect x='7' y='7' width='6' height='6' fill='%23E25B4E' opacity='0.6'/%3E%3Cpolygon points='7,0 10,4 7,7' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='13,0 10,4 13,7' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='20,7 16,10 13,7' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='20,13 16,10 13,13' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='7,20 10,16 7,13' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='13,20 10,16 13,13' fill='%23E25B4E' opacity='0.45'/%3E%3Cpolygon points='0,7 4,10 7,7' fill='%237B8CCA' opacity='0.5'/%3E%3Cpolygon points='0,13 4,10 7,13' fill='%237B8CCA' opacity='0.5'/%3E%3C/svg%3E");
+            background-size: 20px 20px;
+        }
+        /* ─── CHECKER STRIPS ─── */
+        .checker-strip {
+            width: 100%;
+            height: 12px;
+        }
+        .checker-strip-peri {
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='6' height='6' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='6' y='6' width='6' height='6' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='6' y='0' width='6' height='6' fill='%23FAF6F0'/%3E%3Crect x='0' y='6' width='6' height='6' fill='%23FAF6F0'/%3E%3C/svg%3E");
+            background-size: 12px 12px;
+        }
+        /* ─── TULIP ICON ─── */
+        .quilt-tulip-peri {
+            display: inline-block;
+            width: 24px;
+            height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='28' viewBox='0 0 24 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='12,0 20,10 12,8' fill='%237B8CCA' opacity='0.8'/%3E%3Cpolygon points='12,0 4,10 12,8' fill='%237B8CCA' opacity='0.6'/%3E%3Cellipse cx='12' cy='10' rx='4' ry='3' fill='%237B8CCA' opacity='0.7'/%3E%3Crect x='11' y='12' width='2' height='12' fill='%23E25B4E' opacity='0.4'/%3E%3Cpolygon points='11,18 5,22 11,22' fill='%23E25B4E' opacity='0.3'/%3E%3Cpolygon points='13,18 19,22 13,22' fill='%23E25B4E' opacity='0.3'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+        }
+        /* ─── READING LOG ─── */
+        .reading-section {
+            background: var(--warm-white);
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            position: relative;
+        }
+        .content-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        .year-group {
+            margin-bottom: 3.5rem;
+        }
+        .year-group:last-child {
+            margin-bottom: 0;
+        }
+        .year-heading {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 1.75rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .year-heading .year-rule {
+            flex: 1;
+            height: 1px;
+            background: var(--rule);
+        }
+        .book-card {
+            padding: 1.5rem 1.75rem;
+            border: 14px solid transparent;
+            background: var(--cream);
+            margin-bottom: 1.25rem;
+            position: relative;
+        }
+        .book-card:nth-child(odd) {
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
+        }
+        .book-card:nth-child(even) {
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='14' width='14' height='14' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='14' y='0' width='14' height='14' fill='%23FAF6F0'/%3E%3Crect x='0' y='14' width='14' height='14' fill='%23FAF6F0'/%3E%3C/svg%3E") 14 round;
+        }
+        .book-title {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            color: var(--ink);
+            margin-bottom: 0.2rem;
+        }
+        .book-author {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--periwinkle);
+            margin-bottom: 0.75rem;
+        }
+        .book-thoughts {
+            font-size: 0.92rem;
+            line-height: 1.8;
+            color: var(--muted);
+        }
+        /* ─── FOOTER ─── */
+        footer {
+            padding: 0;
+        }
+        .footer-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-name {
+            font-family: var(--serif);
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--muted);
+        }
+        .footer-links {
+            display: flex;
+            gap: 1.75rem;
+            list-style: none;
+        }
+        .footer-links a {
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--muted);
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--coral);
+        }
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            nav .nav-inner {
+                padding: 0.8rem 1.5rem;
+            }
+            nav .nav-links {
+                gap: 1.25rem;
+            }
+            .page-header {
+                padding: 7rem 1.5rem 2.5rem;
+            }
+            .content-wrap {
+                padding: 3rem 1.5rem;
+            }
+            .book-card {
+                border-width: 10px;
+            }
+            .book-card:nth-child(odd) {
+                border-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='10' height='10' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='10' y='10' width='10' height='10' fill='%23E25B4E' opacity='0.6'/%3E%3Crect x='10' y='0' width='10' height='10' fill='%23FAF6F0'/%3E%3Crect x='0' y='10' width='10' height='10' fill='%23FAF6F0'/%3E%3C/svg%3E") 10 round;
+            }
+            .book-card:nth-child(even) {
+                border-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='10' height='10' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='10' y='10' width='10' height='10' fill='%237B8CCA' opacity='0.6'/%3E%3Crect x='10' y='0' width='10' height='10' fill='%23FAF6F0'/%3E%3Crect x='0' y='10' width='10' height='10' fill='%23FAF6F0'/%3E%3C/svg%3E") 10 round;
+            }
+            .footer-inner {
+                flex-direction: column;
+                gap: 1.25rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-star"></span>
+                Sarah Newman
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="index.html#now">Now</a></li>
+                <li><a href="reading.html" class="active">Reading</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Reading <em>Log</em></h1>
+        <div class="page-divider"></div>
+        <p>Books I'm reading for fun — not for school. Just the good stuff, with a few thoughts along the way.</p>
+    </section>
+    <!-- Flying geese border -->
+    <div class="geese-strip-peri"></div>
+    <!-- READING LOG -->
+    <section class="reading-section">
+        <div class="content-wrap">
+            <!-- 2026 -->
+            <div class="year-group">
+                <h2 class="year-heading">2026 <span class="year-rule"></span></h2>
+                <div class="book-card">
+                    <p class="book-title">The Covenant of Water</p>
+                    <p class="book-author">Abraham Verghese</p>
+                    <p class="book-thoughts">Loved Cutting for Stone and especially My Own Country — looking forward to this one. Currently in progress!</p>
+                </div>
+                <div class="book-card">
+                    <p class="book-title">Your next book here</p>
+                    <p class="book-author">Author Name</p>
+                    <p class="book-thoughts">Replace this with your thoughts once you've read it — what you liked, what surprised you, whether you'd recommend it.</p>
+                </div>
+            </div>
+            <!-- 2025 -->
+            <div class="year-group">
+                <h2 class="year-heading">2025 <span class="year-rule"></span></h2>
+                <div class="book-card">
+                    <p class="book-title">Placeholder: A Book You Loved</p>
+                    <p class="book-author">Author Name</p>
+                    <p class="book-thoughts">Add a few sentences about this one — what drew you to it, a favorite moment, or how it stuck with you after.</p>
+                </div>
+                <div class="book-card">
+                    <p class="book-title">Placeholder: Another Good Read</p>
+                    <p class="book-author">Author Name</p>
+                    <p class="book-thoughts">Your thoughts here. Keep it casual — this is for fun, not a book report.</p>
+                </div>
+                <div class="book-card">
+                    <p class="book-title">Placeholder: A Book Someone Recommended</p>
+                    <p class="book-author">Author Name</p>
+                    <p class="book-thoughts">Did it live up to the hype? Would you pass it along to a friend?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Star strip border -->
+    <div class="star-strip"></div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-name">Sarah Newman, 2026</span>
+            <ul class="footer-links">
+                <li><a href="mailto:heysarahnewman@gmail.com">Email</a></li>
+                <li><a href="https://github.com/heysarahnewman">GitHub</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
