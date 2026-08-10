@@ -64,12 +64,13 @@ body {
 .photo-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
 .photo-tile {
   aspect-ratio: 1;
+  min-width: 0;
   border-radius: 12px;
   border: 3px solid transparent;
   padding: 0;
@@ -196,13 +197,14 @@ body {
 .tile-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin-top: 8px;
 }
 
 .tile {
   aspect-ratio: 1.4;
+  min-width: 0;
   border-radius: 10px;
   border: none;
   background: #efe6de;
@@ -218,6 +220,8 @@ body {
   transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
   text-transform: uppercase;
   word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .tile:hover:not(:disabled) {
@@ -314,4 +318,49 @@ body {
 #win-stats {
   opacity: 0.7;
   font-size: 0.85rem;
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .gate-card {
+    padding: 24px 16px;
+  }
+
+  .gate-prompt {
+    font-size: 1.05rem;
+  }
+
+  /* Bigger photos on narrow phones: 2 columns instead of 3 */
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .game-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .tile-grid {
+    gap: 6px;
+  }
+
+  .tile {
+    aspect-ratio: 1.1;
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+
+  .controls {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 9px 14px;
+    font-size: 0.82rem;
+  }
 }
