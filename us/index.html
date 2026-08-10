@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== GATE SCREEN ===================== -->
+  <main id="gate-screen" class="screen">
+    <div class="gate-card">
+      <p class="gate-prompt" id="gate-prompt"></p>
+      <p class="gate-subprompt" id="gate-subprompt"></p>
+
+      <div class="photo-grid" id="photo-grid"></div>
+
+      <div class="gate-feedback" id="gate-feedback" aria-live="polite">
+        <p class="gate-feedback-main" id="gate-feedback-main"></p>
+        <p class="gate-feedback-sub" id="gate-feedback-sub"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== GAME SCREEN ===================== -->
+  <main id="game-screen" class="screen hidden">
+    <header class="game-header">
+      <h1 id="game-title"></h1>
+      <p id="game-subtitle"></p>
+    </header>
+
+    <div id="solved-groups" class="solved-groups"></div>
+
+    <div id="tile-grid" class="tile-grid"></div>
+
+    <p class="mistake-row">
+      Mistakes: <span id="mistake-dots" class="mistake-dots"></span>
+    </p>
+
+    <div class="controls">
+      <button id="shuffle-btn" class="btn btn-secondary">Shuffle</button>
+      <button id="deselect-btn" class="btn btn-secondary">Deselect All</button>
+      <button id="submit-btn" class="btn btn-primary" disabled>Submit</button>
+    </div>
+
+    <p class="toast" id="toast" aria-live="polite"></p>
+
+    <!-- Replaces the mistake row + controls once all 4 groups are solved,
+         so the full board of solved categories stays visible (for a screenshot). -->
+    <div id="win-panel" class="win-panel hidden">
+      <h2 id="win-heading"></h2>
+      <p id="win-body"></p>
+      <p id="win-stats"></p>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
