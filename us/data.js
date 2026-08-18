@@ -52,7 +52,7 @@ const CONFIG = {
     {
       difficulty: "blue",
       name: "Future Plans",
-      words: ["A Billion Dollar Idea", "Costa Rica", "Amalfi Coast", "Crystal City"],
+      words: ["A Billion Dollar Idea", "Puerto Rico", "Pompeii", "Crystal City"],
     },
     {
       difficulty: "purple",
